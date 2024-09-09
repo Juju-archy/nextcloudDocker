@@ -8,8 +8,8 @@ fi
 
 # Démarrer le conteneur Nextcloud avec les variables d'environnement
 docker run -d -p 8080:80 \
-##  -e NEXTCLOUD_ADMIN_USER=${NEXT_USER} \
-##  -e NEXTCLOUD_ADMIN_PASSWORD=${NEXT_PSWD} \
+  -e NEXTCLOUD_ADMIN_USER=${NEXT_USER} \
+  -e NEXTCLOUD_ADMIN_PASSWORD=${NEXT_PSWD} \
   -e NEXTCLOUD_DB_TYPE=pgsql \
   -e NEXTCLOUD_DB_HOST=${POSTGRESQL_ADDON_HOST} \
   -e NEXTCLOUD_DB_PORT=${POSTGRESQL_ADDON_PORT} \
